@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 import { Redirect } from "react-router-dom";
 import {Nav,Navbar,Container} from 'react-bootstrap'
 import SweetAlert from "react-bootstrap-sweetalert";
@@ -61,7 +61,8 @@ class Header extends React.Component {
           <h1 style={{textAlign:"center"}}>ONLINE ART GALLERY</h1>
           <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="#home" style={{fontWeight:"bold",fontFamily:"cursive"}}><img src={logo} style={{height:"40px"}}/></Navbar.Brand>
+      <img src={logo} style={{height:"40px"}}/>
+        <Navbar.Brand href="" style={{fontWeight:"bold",fontFamily:"cursive"}}></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
             <Nav.Link href="/home" style={{color:"gray",fontWeight:"bold",fontSize:"120%"}}>Home</Nav.Link>
@@ -125,4 +126,4 @@ class Header extends React.Component {
     );
 }
 }
-export default Header;
+export default Header; 
